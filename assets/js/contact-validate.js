@@ -76,17 +76,17 @@
     return true;
   }
 
-  function validateEmail() {
-    const value = emailInput.value.trim();
+  function validateGmail() {
+    const value = gmailInput.value.trim();
     if (!value) {
-      markInvalid(emailInput, "Email is required.");
+      markInvalid(gmailInput, "Gmail address is required.");
       return false;
     }
     if (!GMAIL_REGEX.test(value)) {
-      markInvalid(emailInput, "Only Gmail addresses (name@gmail.com) are allowed.");
+      markInvalid(gmailInput, "Only Gmail addresses (name@gmail.com) are allowed.");
       return false;
     }
-    markValid(emailInput);
+    markValid(gmailInput);
     return true;
   }
 
