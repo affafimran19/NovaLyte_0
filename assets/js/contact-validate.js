@@ -91,7 +91,7 @@
   }
 
   function validatePhone() {
-    const value = phoneInput.value.b     ();
+    const value = phoneInput.value.trim();
     if (!value) {
       clearState(phoneInput); // optional field
       return true;
