@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Contact NovaLyte Studio.">
+
+<title>Contact | NovaLyte Studio</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+rel="stylesheet">
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="assets/css/main.css">
+
+<style>
+    /* --- Contact form validation styling --- */
+    .contact-form .field-error {
+        display: none;
+        color: #C0392B;
+        font-size: .76rem;
+        font-weight: 600;
+        margin-top: 4px;
+    }
+    .contact-form label:has(.field-error:not(:empty)) .field-error {
+        display: block;
+    }
+    .contact-form .input-icon.invalid {
+        border-color: #C0392B !important;
+    }
+    .contact-form .input-icon.invalid i {
+        color: #C0392B;
+        border-right-color: #E7B8B0;
+    }
+    .contact-form .input-icon.valid {
+        border-color: #3C8A5B !important;
+    }
+    .contact-form .input-icon.valid i {
+        color: #3C8A5B;
+        border-right-color: #B7D9C3;
+    }
+    .contact-form .btn:disabled {
+        opacity: .6;
+        cursor: not-allowed;
+        transform: none;
+    }
+    .contact-form textarea {
+        resize: none;
+        overflow: hidden;
+        min-height: 60px;
+    }
+</style>
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+<a class="brand"
+href="index.html">
+
+<span class="brand-mark">
+N
+</span>
+
+<span>
+NovaLyte<span class="dot">.</span>
+</span>
+
+</a>
+
+
+<button class="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+<nav class="nav">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="about.html">
+About
+</a>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="portfolio.html">
+Projects
+</a>
+
+<a href="blog.html">
+Blog
+</a>
+
+<a class="nav-cta active"
+href="contact.html">
+Let's Talk ↗
+</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="page-hero section">
+
+<span class="eyebrow">
+Contact
+</span>
+
+<h1>
+Have an idea?
+<br>
+<em>Let's talk.</em>
+</h1>
+
+<p>
+Tell us a little about your project and
+we'll get back to you with the next step.
+</p>
+
+</section>
+
+
+<section class="section contact-layout">
+
+
+<div class="contact-info">
+
+<span class="eyebrow">
+Start a conversation
+</span>
+
+<h2>
+We'd love to hear
+<br>
+what you're building.
+</h2>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+
+<a href="mailto:hello@novalyte.studio">
+hello@novalyte.studio
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
+
+<a href="tel:+92 3xx xxxxxxx">
++92 3xx xxxxxxx
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+
+<p>
+Faisalabad, Punjab, Pakistan
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<i class="fa-regular fa-clock" aria-hidden="true"></i>
+
+<p>
+Mon–Fri · 10:00–18:00
+</p>
+
+</div>
+
+</div>
+
+
+<form class="contact-form"
+id="contactForm"
+novalidate>
+
+
+<label>
+
+Name
+
+<div class="input-icon">
+
+<i class="fa-solid fa-user" aria-hidden="true"></i>
+
+<input
+id="cf-name"
+name="name"
+type="text"
+placeholder="Username"
+required>
+
+</div>
+
+<span class="field-error"></span>
+
+</label>
+
+
+<label>
+
+Email
+
+<div class="input-icon">
+
+<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+
+<input
+id="cf-email"
+name="email"
+type="email"
+placeholder="hellonovalyte@gmail.com"
+required>
+
+</div>
+
+<span class="field-error"></span>
+
+</label>
+
+
+<label>
+
+Phone
+
+<div class="input-icon">
+
+<i class="fa-solid fa-phone" aria-hidden="true"></i>
+
+<input
+id="cf-phone"
+name="phone"
+type="tel"
+placeholder="+92 ...">
+
+</div>
+
+<span class="field-error"></span>
+
+</label>
+
+
+<label>
+
+Message
+
+<div class="input-icon">
+
+<i class="fa-solid fa-pen" aria-hidden="true"></i>
+
+<textarea
+id="cf-message"
+name="message"
+rows="1"
+placeholder="Tell us about your project..."
+required></textarea>
+
+</div>
+
+<span class="field-error"></span>
+
+</label>
+
+
+<button
+class="btn btn-primary"
+type="submit">
+
+Send message ↗
+
+</button>
+
+
+<p
+class="form-message"
+aria-live="polite">
+</p>
+
+
+</form>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+<div class="footer-main">
+
+<a class="brand"
+href="index.html">
+
+<span class="brand-mark">
+N
+</span>
+
+<span>
+NovaLyte<span class="dot">.</span>
+</span>
+
+</a>
+
+<p>
+Digital experiences for ambitious brands.
+</p>
+
+<div class="footer-links">
+
+<a href="portfolio.html">
+Projects
+</a>
+
+<a href="services.html">
+Services
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 NovaLyte Studio
+</span>
+
+<span>
+Built with intention.
+</span>
+
+</div>
+
+</footer>
+
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact-validate.js"></script>
+
+</body>
+</html>
